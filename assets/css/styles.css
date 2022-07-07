@@ -88,7 +88,7 @@ a:hover {
     overflow-y: auto;
   }
   #menu a {
-    padding: 0 1rem 2rem;
+    padding: 1rem 1rem;
     margin: 0;
     border-bottom: 2px solid rgba(0, 0, 0, 0.05);
     color: var(--primary)
