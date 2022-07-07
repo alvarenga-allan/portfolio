@@ -1,0 +1,103 @@
+/*variables*/
+:root{
+  --main-bg-color: #1c2427;
+  --menu-footer: #000;
+  --main-text-color: #CCCCCC;
+  --primary: #f0bc04;
+
+  /*text*/
+
+}
+
+  body {
+    margin: 0px;
+    font-family: 'Fira Code', monospace, sans-serif;
+  }
+  
+  ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .header-bg {
+    background-color: #000000;
+  }
+  
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .header img{
+    width: 200px;
+  }
+  
+  .header-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  .header-menu a {
+    color: #ffffff;
+    display: inline-block;
+    padding: 16px 0px;
+    font-size: 18px;
+    position: relative;
+  }
+  
+  .header-menu a:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0px;
+    background: var(--primary);
+    margin-top: 4px;
+    transition: 0.3s;
+    position: absolute;
+  }
+  
+  .header-menu a:hover:after {
+    width: 100%;
+  }
+  
+  @media (max-width: 800px) {
+    .header-menu {
+      gap: 20px;
+    }
+    .header-menu a {
+      background: #111111;
+      padding: 12px 16px;
+      border-radius: 4px;
+    }
+    .header-menu a:hover {
+      background-color: var(--primary);
+    }
+    .header a:after {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .header-menu {
+      gap: 12px;
+    }
+    .header-menu a {
+      padding: 8px 12px;
+      font-size: 14px;
+    }
+  }
+  
