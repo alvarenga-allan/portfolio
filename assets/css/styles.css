@@ -236,27 +236,28 @@ a:hover {
     background: url(../images/hero.png) no-repeat right;
     background-size:250px;
     background-color: var(--main-bg-color);
-    background-position-y: 405px;
+    background-position-y: 100%;
     background-position-x: right;
-    min-height: 670px;
+    min-height: 100vh;
    
   }
   .home .home-content .text-1{
-    font-size: 40px;
+    font-size: 30px;
     
 }
   .home .home-content .text-2{
-      font-size: 50px;
+      font-size: 40px;
   }
   .home .home-content .text-3{
-      font-size: 25px;
+      font-size: 20px;
       margin-bottom: 30px;
   }
   .home .home-content .icons{
     font-size: 0.6rem;
+    margin:0;
 
   }
   .home .max-width{
-    margin:50px 0 auto 40px;
+    margin:50px 0 auto 0px;
   }
 }
