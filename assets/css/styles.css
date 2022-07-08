@@ -248,16 +248,6 @@ width:120%;
   
 }
 @media (max-width: 500px){
-  .home{
-    background: url(../images/hero.png) no-repeat right;
-    background-size:250px;
-    background-color: var(--main-bg-color);
-    background-position-y: 100%;
-    background-position-x: right;
-    min-height: 100vh;
-    
-   
-  }
   .home .home-content .text-1{
     font-size: 30px;
     
