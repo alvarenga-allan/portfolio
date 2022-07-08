@@ -88,10 +88,11 @@ a:hover {
   display: flex;
     background: url(../images/hero.png) no-repeat right;
     background-size:555px;
+    background-position-y: 100%;
     background-color: var(--main-bg-color);
     color: var(--main-text-color);
     font-family: 'Fira Code', monospace sans-serif;
-    min-height: 605px;
+    min-height: 100vh;
 }
 
 .home .max-width{
@@ -250,7 +251,7 @@ a:hover {
       font-size: 32px;
   }
   .home .home-content .text-3{
-      font-size: 12px;
+      font-size: 14px;
       margin-bottom: 30px;
   }
   .home .home-content .icons{
