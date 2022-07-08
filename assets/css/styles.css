@@ -238,7 +238,7 @@ a:hover {
     background-color: var(--main-bg-color);
     background-position-y: 335px;
     background-position-x: right;
-    min-height: 550px;
+    min-height: 850px;
   }
   .home .home-content .text-1{
     font-size: 40px;
