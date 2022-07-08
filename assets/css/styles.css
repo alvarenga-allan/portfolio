@@ -1,30 +1,46 @@
 /*variables*/
 :root{
   --main-bg-color: #1c2427;
-  --menu-footer: #000;
   --main-text-color: #CCCCCC;
   --primary: #f0bc04;
-  --secondary: #000000
-
-  /*text*/
-
+  --secondary: #000000;
 }
+  /*text*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+
 body,
 ul {
   margin: 0px;
   padding: 0px;
-  font-family: 'Fira Code', monospace; sans-serif;
+  font-family: 'Fira Code', monospace sans-serif;
 }
 
 a img {
   width:200px;
+  padding: 0;
+  margin: 0;
 }
 
 a {
   color: var(--main-text-color);
   display: inline-block;
   padding: 16px 0px;
-  font-size: 18px;
+  font-size: 20px;
   position: relative;
   text-decoration: none;
 }
@@ -33,26 +49,29 @@ a:hover {
   background: var(--main-bg-color);
 }
 
-#logo {
-  font-size: 1.5rem;
-  font-weight: bold;
+#logo img {
+  display: block;
+}
+
+.header-bg {
+  background-color: var(--secondary);
 }
 
 #header {
   box-sizing: border-box;
   height: 70px;
-  padding: 1rem;
+  padding: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #000000;
-  box-sizing: border-box;
+  flex-wrap: wrap;
 }
 
 #menu {
   display: flex;
   list-style: none;
   gap: 0.5rem;
+ 
 }
 
 #menu a {
@@ -62,6 +81,54 @@ a:hover {
 
 #btn-mobile {
   display: none;
+}
+/* Home*/
+
+.home{
+  display: flex;
+    background: url(../images/hero.png) no-repeat right;
+    background-size:555px;
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    font-family: 'Fira Code', monospace sans-serif;
+    min-height: 605px;
+}
+
+.home .max-width{
+  margin:160px 0 auto 40px;
+}
+.home .home-content .text-1{
+  font-size: 48px;
+}
+.home .home-content .text-2{
+  font-size:6.5rem;
+  font-weight: 500;
+  margin-left: -3px;
+}
+.home .home-content .text-3{
+  font-size: 40px;
+  margin: 5px 0 100px;
+}
+.home .home-content .text-3 span{
+  color:var(--primary) ;
+  font-weight: 500;
+}
+.home .icons{
+  display:flex;
+ gap: 40px;
+ margin:10px;
+}
+
+.home .icons .fa-github:hover{
+  color: var(--primary);
+}
+
+.home .icons .fa-linkedin-in:hover{
+  color: var(--primary);
+}
+
+.home .icons .fa-twitter:hover{
+  color: var(--primary);
 }
 
 @media (max-width: 600px) {
