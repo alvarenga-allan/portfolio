@@ -86,23 +86,38 @@ a:hover {
 
 .home{
   display: flex;
-    background: url(../images/hero.png) no-repeat right;
-    background-size:555px;
-    background-position-y: 100%;
     background-color: var(--main-bg-color);
     color: var(--main-text-color);
     font-family: 'Fira Code', monospace sans-serif;
-    min-height: 100vh;
 }
 
 .home .max-width{
   margin:160px 0 auto 40px;
+  display:flex;
+  width:100%;
+  justify-content: center;
+  
+}
+.hero img{
+  width: 100%;
+  max-width: 500px;
+  align-self: flex-end;
+  
+}
+.hero{
+  display:flex;
+  width: 60%;
+  justify-content: right;
+}
+.home .home-content{
+
+width:120%;
 }
 .home .home-content .text-1{
   font-size: 48px;
 }
 .home .home-content .text-2{
-  font-size:6rem;
+  font-size:6.5rem;
   font-weight: 500;
   margin-left: -3px;
 }
