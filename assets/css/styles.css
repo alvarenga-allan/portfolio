@@ -11,27 +11,12 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-}
-
-.max-width{
-    max-width: 1300px;
-    padding: 0 10px;
-    min-height:550px ;
-    align-content: flex-end;
-}
-
-
-body,
-ul {
-  margin: 0px;
-  padding: 0px;
-  font-family: 'Fira Code', monospace sans-serif;
+    padding: 0px;
+    font-family: 'Fira Code', monospace sans-serif;
 }
 
 a img {
   width:200px;
-  padding: 0;
-  margin: 0;
 }
 
 a {
@@ -85,7 +70,6 @@ a:hover {
   display: flex;
     background-color: var(--main-bg-color);
     color: var(--main-text-color);
-    font-family: 'Fira Code', monospace sans-serif;
 }
 
 .home .max-width{
@@ -93,18 +77,15 @@ a:hover {
   width:100%;
 
 }
-.hero img{
-
-  max-width: 100%;
-  align-self: flex-end;
-  
-}
-
 .hero{
   display:flex;
   justify-content: right;
   flex-wrap: wrap;
   flex:1 1 100px;
+}
+.hero img{
+  max-width: 100%;
+  align-self: flex-end;
 }
 
 .home .home-content{
@@ -115,6 +96,7 @@ margin: auto;
 flex:2;
 
 }
+
 .home .home-content .text-1{
   font-size: 48px;
   line-height: 1;
@@ -137,11 +119,12 @@ flex:2;
   color:var(--primary) ;
   font-weight: 500;
 }
+
 .home .icons{
   display:flex;
  gap: 40px;
  margin:10px;
- font-size: 1rem;
+ font-size: 0.5rem;
 }
 
 .home .icons .fa-github:hover{
@@ -155,6 +138,7 @@ flex:2;
 .home .icons .fa-twitter:hover{
   color: var(--primary);
 }
+
 /* Extra small devices (phones, 600px and down) */
 @media (max-width: 600px) {
   #menu {
@@ -218,6 +202,13 @@ flex:2;
     top: -7px;
   }
   
+  .home .home-content{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: auto;
+    flex:2;
+  }
   .home .home-content .text-1{
     font-size: 24px;
     margin-top: 20px;
@@ -238,6 +229,11 @@ flex:2;
     font-size: 0.6rem;
     margin:0;
   }
+  .home .icons{
+    display:flex;
+   gap: 40px;
+   margin:10px;
+  }
   
   .home .max-width{
     max-width:100%;
@@ -252,12 +248,17 @@ flex:2;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
+@media only screen and (min-width: 601px) {
+  .home .home-content{
+    display: flex;
+    align-items: flex-start;
+    margin: auto;
+    flex:2;
+    
+    }
   .home .home-content .text-1{
     font-size: 42px;
     margin-top: 20px;
-    
     
 }
   .home .home-content .text-2{
@@ -266,7 +267,7 @@ flex:2;
   
   }
   .home .home-content .text-3{
-      font-size: 36px;
+      font-size: 24px;
       margin-bottom: 30px;
   }
 
@@ -279,56 +280,71 @@ flex:2;
     max-width:100%;
     justify-content: center;
     flex-direction: column;
+    flex:2;
   }
+  
+
   .hero img{
-    max-width:70%
+    max-width:100%;
   }
     
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  
-  .max-width{
-width: 100%;
-    padding: 0 10px;
-    min-height:550px ;
-    align-content: flex-end;
-}
   .home .home-content .text-1{
     font-size: 42px;
-    margin-top: 60px;
- 
-    
+    margin-top: 20px;
     
 }
   .home .home-content .text-2{
-      font-size:96px;
-      line-height: 5.5rem;
+      font-size:72px;
+      line-height: 4.5rem;
+  
+  }
+  .home .home-content .text-3{
+      font-size: 24px;
+      margin-bottom: 30px;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .home .home-content .text-1{
+    font-size: 48px;
+    margin-top: 20px;
+    
+}
+  .home .home-content .text-2{
+      font-size:90px;
+      line-height: 7.5rem;
   
   }
   .home .home-content .text-3{
       font-size: 36px;
       margin-bottom: 30px;
-  }
-
-  .home .home-content .icons{
-    font-size: 0.6rem;
-    margin:0;
-  }
+}
+.home .max-width{
+  max-width:100%;
+  justify-content: center;
+  flex-direction: row;
+  flex:2;
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .home .home-content .text-1{
+    font-size: 48px;
+    margin-top: 20px;
+    
+}
+  .home .home-content .text-2{
+      font-size:120px;
+      line-height: 7.5rem;
   
-  .home .max-width{
-    max-width:100%;
-    justify-content: center;
-    flex-direction: column;
   }
-  .hero img{
-    max-width:70%
-  }
+  .home .home-content .text-3{
+      font-size: 36px;
+      margin-bottom: 30px;
+}
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {}
+}
