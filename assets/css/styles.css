@@ -12,11 +12,11 @@
     box-sizing: border-box;
     text-decoration: none;
     padding: 0px;
-    font-family: 'Fira Code', monospace sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 a img {
-  width:200px;
+  width:80px;
 }
 
 a {
@@ -75,8 +75,18 @@ a:hover {
 .home .max-width{
   display:flex;
   width:100%;
+  min-height: 100vh;
 
 }
+.home .home-content{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: auto 40px;
+  flex:2;
+  
+  }
+
 .hero{
   display:flex;
   justify-content: right;
@@ -88,26 +98,14 @@ a:hover {
   align-self: flex-end;
 }
 
-.home .home-content{
-display: flex;
-align-items: flex-start;
-flex-direction: column;
-margin: auto;
-flex:2;
 
-}
 
 .home .home-content .text-1{
   font-size: 48px;
   line-height: 1;
 }
 
-.home .home-content .text-2{
-  font-size:6.5rem;
-  font-weight: 500;
-  margin-left: -3px;
-  line-height: 1;
-}
+
 
 .home .home-content .text-3{
   font-size: 40px;
@@ -236,13 +234,13 @@ flex:2;
     flex-direction: column;
   }
   .hero img{
-    max-width:50%
+    max-width:80%
   }
    
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 601px) {
+@media (min-width: 601px) and (max-width: 1058px) {
   .home .home-content{
     display: flex;
     align-items: flex-start;
@@ -284,37 +282,27 @@ flex:2;
     
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media (min-width: 1059px) and (max-width: 1199px) {
+  .home .home-content{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: auto 36px;
+    flex:2;
+    
+    }
   .home .home-content .text-1{
-    font-size: 42px;
+    font-size: 44px;
     margin-top: 20px;
     
 }
   .home .home-content .text-2{
-      font-size:72px;
-      line-height: 4.5rem;
-  
-  }
-  .home .home-content .text-3{
-      font-size: 24px;
-      margin-bottom: 30px;
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  .home .home-content .text-1{
-    font-size: 48px;
-    margin-top: 20px;
-    
-}
-  .home .home-content .text-2{
-      font-size:90px;
+      font-size:75px;
       line-height: 7.5rem;
   
   }
   .home .home-content .text-3{
-      font-size: 36px;
+      font-size: 32px;
       margin-bottom: 30px;
 }
 .home .max-width{
@@ -323,22 +311,30 @@ flex:2;
   flex-direction: row;
   flex:2;
 }
+}
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 1440px) {
   .home .home-content .text-1{
     font-size: 48px;
     margin-top: 20px;
     
 }
   .home .home-content .text-2{
-      font-size:120px;
+      font-size:85px;
       line-height: 7.5rem;
+      flex:1;
   
   }
   .home .home-content .text-3{
       font-size: 36px;
       margin-bottom: 30px;
 }
-}
-
+.home .home-content{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: auto 40px;
+  flex:2;
+  
+  }
 }
