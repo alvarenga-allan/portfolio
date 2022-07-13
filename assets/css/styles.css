@@ -76,9 +76,9 @@ a:hover {
 .home .max-width{
   display:flex;
   width:100%;
-  min-height: 100vh;
-
+  height: 100vh;
 }
+
 .home .home-content{
   display: flex;
   align-items: flex-start;
@@ -93,6 +93,7 @@ a:hover {
   justify-content: right;
   flex-wrap: wrap;
   flex:1 1 100px;
+  
 }
 .hero img{
   max-width: 100%;
@@ -338,4 +339,10 @@ a:hover {
   flex:2;
   
   }
+  .home .max-width{
+    display:flex;
+    width:100%;
+  
+  }
+ 
 }
