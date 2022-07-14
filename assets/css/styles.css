@@ -137,7 +137,9 @@ a:hover {
 .home .icons .fa-twitter:hover{
   color: var(--primary);
 }
-
+.about{
+  background-color: #f0f0f0;
+}
 /* Extra small devices (phones, 600px and down) */
 @media (max-width: 600px) {
   #menu {
