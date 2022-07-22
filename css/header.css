@@ -34,9 +34,9 @@
     padding: 20px;
   }
   .header a {
-    background: linear-gradient(#FDE722, #F0BC04);
+    background-color: #141414;
     border-radius: 4px;
-    color:black;
+  
   }
  
 }
