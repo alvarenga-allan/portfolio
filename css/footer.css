@@ -58,4 +58,18 @@
   .footer-contato li {
     font-size: 1rem;
   }
+  .footer-texto {
+    font-size: 2.25rem;
+    line-height: 1.33;
+    color: #cccccc;
+    grid-area: title;
+  }
+
+  .footer-copy {
+    grid-column: 1 / -1;
+    font-size: 0.8rem;
+    color: #8f8f8f;
+    align-self: center;
+    grid-area: footer;
+  }
 }
