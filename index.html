@@ -6,66 +6,121 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Allan Alvarenga</title>
-  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="./css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <div class="header-bg">
-    <header id="header">
-      <a id="logo" href=""><img src="./assets/images/Allan.svg" alt="Allan Alvarenga"></a>
-      <nav id="nav">
-        <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
-          <span id="hamburger"></span>
-        </button>
-        <ul id="menu" role="menu">
-          <li><a href="/">Home</a></li>
-          <li><a href="/">About</a></li>
-          <li><a href="/">Portfolio</a></li>
-          <li><a href="/">Conta</a></li>
+  <header class="header">
+    <a href="#home"><img id="logo" src="./assets/images/Allan.svg" alt="Allan."></a>
+    <nav>
+      <ul class="header-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#experiences">Experiences</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="introducao" id="home">
+    <div>
+      <h2>Hi, My name is <br> </h2>
+      <h1> Allan Alvarenga <br> </h1>
+      <h2> and I'm a <span class="highlight">Front-end Developer</span>.</h2>
+    </div>
+    <img src="./assets/images/hero.png" alt="Foto perfil">
+  </main>
+
+  <section class="experiencia" id="experiences" aria-label="Experiência">
+    <h2 class="subtitulo">Experiences</h2>
+    <img class="freelancerimg" src="./assets/images/freelancer.svg" alt="man working with computer">
+    <div>
+      <p class="experiencia-texto">I've been developing projects using <strong>HTML</strong>, <strong>CSS</strong> and <strong>JavaScript</strong>. Currently, I'm working with <strong>React</strong> and <strong>React Native</strong>. Furthermore, I'm learning <strong>UX/UI Design</strong>.</p>
+      </p>
+
+      <div class="empresa">
+        <span class="empresa-ano">2022 - Currently</span>
+        <h3 class="empresa-titulo">Capitual</h3>
+        <span class="empresa-titulo">Junior Developer II</span>
+        <p class="empresa-texto">I work in the Mobile team at a multi-currency bank. My Job is develop new features and find bugs in the app.</p>
+        <ul class="empresa-habilidades">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Styled Components</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>React Native</li>
+          <li>Typescript</li>
+          <li>Figma</li>
+          <li>GraphQL</li>
+
         </ul>
-      </nav>
-    </header>
-  </div>
-  <section class="home" id="home">
-    <div class="max-width">
-      <div class="home-content">
-        <div class="text-1"> Hello, my name is</div>
-        <div class="text-2"> Allan Alvarenga</div>
-        <div class="text-3"> and I'm a <span class="typing">front-end Developer</span>.
-        </div>
-        <div class="icons">
-          <a href="https://github.com/alvarenga-allan" target="_blank"><i class="fa-brands fa-github fa-3x"></i></a>
-          <a href="https://www.linkedin.com/in/allanalvarenga/" target="_blank"><i class="fa-brands fa-linkedin-in fa-3x"></i></a>
-          <a href="https://twitter.com/AllanSAlvarenga" target="_blank"><i class="fa-brands fa-twitter fa-3x"></i></a>
-        </div>
       </div>
-      <div class="hero">
-        <img src="./assets/images/hero.png" alt="">
-      </div>
+
+
     </div>
 
-  </section>
-  <!-- about section start -->
-  <section class="about" id="about">
-    <div class="max-width">
-      <h2 class="title">About</h2>
-      <div class="about-content">
-        <div class="column left">
-          <img src="images/profile-1.jpeg" alt="">
-        </div>
-        <div class="column right">
-          <div class="text">I'm Allan and I'm a <span class="typing-2">Desenvolvedor front-end</span></div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut voluptatum eveniet doloremque autem excepturi eaque, sit laboriosam voluptatem nisi delectus. Facere explicabo hic minus accusamus alias fuga nihil dolorum quae. Explicabo illo unde, odio consequatur ipsam possimus veritatis, placeat, ab molestiae velit inventore exercitationem consequuntur blanditiis omnis beatae. Dolor iste excepturi ratione soluta quas culpa voluptatum repudiandae harum non.</p>
-
-        </div>
-      </div>
     </div>
   </section>
 
-  <script src="./index.js"></script>
+  <section class="formacao" id="education" aria-label="Formação">
+    <div class="formacao-container">
+      <h2 class="subtitulo">Education</h2>
+      <img class="certificateimg" src="./assets/images/certificate.svg" alt="man with certificate">
+      <div>
+        <p class="formacao-texto">
+          I'm a <strong>Biologist</strong> with master degree in <strong>Botany </strong>and Ph.D in <strong>Ecology and Conservation</strong>. Nowadays I'm studying <strong> Computer Science </strong> and I'm a graduate student of <strong>Software analysis and development </strong> at Faculdade Descomplica.
+        </p>
+
+        <ul class="faculdade-lista">
+          <li class="faculdade phd">
+            <span class="faculdade-tipo ">Ph.D</span>
+            <h3 class="faculdade-curso">Ecology and conservation</h3>
+            <span class="faculdade-instituicao">UFPR 2015-2019</span>
+          </li>
+          <li class="faculdade">
+            <span class="faculdade-tipo">POSTGRADUATE</span>
+            <h3 class="faculdade-curso">Software analysis and development</h3>
+            <span class="faculdade-instituicao">Descomplica 2022-2022</span>
+          </li>
+          <li class="faculdade">
+            <span class="faculdade-tipo">BACHELOR</span>
+            <h3 class="faculdade-curso">Computer Science</h3>
+            <span class="faculdade-instituicao">Descomplica 2022-2026</span>
+          </li>
+
+
+        </ul>
+
+
+        <div class="idiomas">
+          <h3>Languages</h3>
+          <ul>
+            <li>English <span>/ Intermediate</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <footer class="footer" id="contact">
+    <div class="footer-container">
+      <p class="footer-texto">Contact me</p>
+      <img class="footerimg" src="./assets/images/mailbox.svg" alt="">
+      <ul class="footer-contato">
+        <li>allan.baptista@gmail.com</li>
+
+        <li><a href="/">@alvarenga-allan</a></li>
+      </ul>
+      <p class="footer-copy">Allan M. S. B. de Alvarenga &copy;. Alguns direitos reservados.</p>
+    </div>
+  </footer>
+
 </body>
+
 
 </html>
