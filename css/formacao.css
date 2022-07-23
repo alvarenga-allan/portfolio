@@ -94,35 +94,11 @@
   color: #a3a3a3;
 }
 
-.cursos {
-  margin-bottom: 60px;
-}
+.idiomas h3 {
+  background: -webkit-linear-gradient(135deg, #FDE722, #F0BC04);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 
-.formacao-extra h3 {
-  font-size: 0.875rem;
-  line-height: 1.4;
-  color: #8f8f8f;
-  text-transform: uppercase;
-  margin-bottom: 30px;
-  position: relative;
-}
-
-.formacao-extra h3::before {
-  display: block;
-  content: "";
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  left: -36px;
-  top: -4px;
-}
-
-.cursos h3::before {
-  background: url("../img/cursos.svg") no-repeat center center;
-}
-
-.idiomas h3::before {
-  background: url("../img/idiomas.svg") no-repeat center center;
 }
 
 .formacao-extra li {
